@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+    <title>Hello, Quine World!</title>
+    <meta name="description" content="セキュリティ・キャンプフォーラム2015のShibuya.XSS in セキュリティ・キャンプフォーラムの、@MakeNowJustによるLTです。">
+    <meta name="author" content="露里きつね">
+    <!-- css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+  </head>
+  
+  <body class="impress-not-supported">
+    <div class="fallback-message">
+      <p>ブラウザがこのページを見るのに必要な機能を満たしていません。</p>
+      <p>最新版のGoogle ChromeやFirefoxなどを利用してください。</p>
+    </div>
+    <div id="impress">
+      <div id="title" data-x='0' data-y='0' class="step">
+        <h1>Hello, <b>Quine</b> World!</h1><small>露里きつね</small>
+      </div>
+      <div id="about" data-x='0' data-y='0' data-z='10000' class="step">
+        <h2>自己紹介</h2>
+        <ul>
+          <li>露里きつね</li>
+          <li>セキュリティ・キャンプ全国大会2014　Webセキュリティクラス卒業</li>
+          <li>Twitterは<a href="https://twitter.com/MakeNowJust" target="_blank">@MakeNowJust</a>とか‥</li>
+          <li>趣味は読書、なんでも読む（ラノベから純文学、戯曲まで）</li>
+        </ul>
+      </div>
+      <div id="like-1" data-x='0' data='0' data-z='20000' class="step">
+        <h2>好きなもの</h2>
+      </div>
+      <div id="like-2" data-x='0' data-y='1000' data-z='20000' data-rotate='180'
+      class="step">
+        <p class="big">Webセキュリティ的なもの</p>
+        <p class="small">（XSS、CSRF、SQLインジェクション、alert等々）</p>
+      </div>
+      <div id="like-3" data-x='-2000' data-y='1000' data-z='20000' data-rotate='180'
+      data-scale='3' class="step">
+        <p class="big">プログラミング言語</p>
+        <p class="small">（理論も実装も）</p>
+      </div>
+      <div id="like-4" data-x='-6500' data-y='1000' data-z='20000' data-rotate='180'
+      data-scale='5' class="step">
+        <img src="img/w_v_o_quine.jpg"><span class="bigbig top">Quine</span>
+        <br><span class="small">（自己参照プログラム）</span>
+      </div>
+      <div id="what-1" data-x='0' data-y='-2000' data-z='40000' data-scale='1'
+      class="step">
+        <h2>Q. Quine（クワイン）とは？</h2>
+        <p>A. 実行すると、ソースコード自身を出力するプログラム</p>
+      </div>
+      <div id="what-2" data-x='1000' data-y='-2000' data-z='40000' class="step">
+        <h2>例（JavaScript）</h2>
+        <p><pre><code>eval(s="alert('eval(s='+JSON.stringify(s)+')')")</code></pre>
+        </p>
+        <button id="eval-quine-js">実行</button>
+        <script>
+          document.getElementById('eval-quine-js').addEventListener('click', function () {
+            eval(s="alert('eval(s='+JSON.stringify(s)+')')")
+          });
+        </script>
+      </div>
+      <div id="what-3" data-x='2000' data-y='-2000' data-z='40000' class="step">
+        <h2>Q. 何が面白いの？</h2>
+        <p>A. 考えるな、感じろ！</p>
+      </div>
+      <div id="what-4" data-x='3000' data-y='-2000' data-z='40000' class="step">
+        <ul class="big">
+          <li>短かいのに複雑なプログラムが書ける</li>
+          <li>チューリング完全な言語なら必ず書ける
+            <br>（クリーネの再帰定理）</li>
+          <li>
+            <p>無限実行<pre class="bash"><code>ruby quine | ruby | ruby | ruby | ...</code></pre>
+            </p>
+          </li>
+        </ul>
+        <p class="big">結論→楽しい！！！</p>
+      </div>
+      <div id="what-5" data-x='4000' data-y='-2000' data-z='40000' class="step">
+        <h2>Q. セキュリティ的なQuineの話がしたい！</h2>
+        <p>A. Ken Thompsonの
+          <br><a href="http://cm.bell-labs.com/who/ken/trust.html">Reflecting on Trusting Trsut</a>
+          <br>でもどうぞ</p>
+      </div>
+      <div id="quine-1" data-x='0' data-y='0' data-z='40000' class="step">
+        <h2>過去に書いたQuineの紹介</h2>
+      </div>
+      <div id="quine-2" data-x='1000' data-y='0' data-z='40000' class="step">
+        <h2>Octocat Quine</h2>
+        <img src="img/octocat-quine.png">
+      </div>
+      <div id="quine-3" data-x='2000' data-y='0' data-z='40000' class="step">
+        <h2>Binary Quine</h2>
+        <img src="img/binary-quine.png">
+      </div>
+      <div id="quine-4" data-x='3000' data-y='0' data-z='40000' class="step">
+        <h2>その他</h2>
+        <ul>
+          <li>記号だけでQuineを書いたり、</li>
+          <li>100以上の言語でQuineを書いたりしています。</li>
+          <li><a href="https://github.com/MakeNowJust/octocat-quine">https://github.com/MakeNowJust/octocat-quine</a>
+          </li>
+          <li><a href="https://github.com/MakeNowJust/quine">https://github.com/MakeNowJust/quine</a>
+          </li>
+          <li><a href="https://github.com/MakeNowJust/quine2">https://github.com/MakeNowJust/quine2</a>
+          </li>
+        </ul>
+      </div>
+      <div id="final-1" data-x='-5000' data-y='2000' data-z='40000' class="step">
+        <h2>最後に</h2>
+      </div>
+      <div id="final-2" data-x='-3000' data-y='2000' data-z='40000' data-scale='3'
+      class="step">
+        <p class="big">Quine Advent Calendar 2014やってます！</p>
+        <p class="small">（現在124日目。ほぼ一人で更新し続けています）</p>
+      </div>
+      <div id="final-3" data-x='0' data-y='2000' data-z='40000' data-scale='3'
+      class="step">
+        <p>興味のある方は以下のURLまで</p>
+        <p class="small"><a href="https://github.com/MakeNowJust/quine_advent_calendar_2014">https://github.com/MakeNowJust/quine_advent_calendar_2014</a>
+        </p>
+      </div>
+      <div id="thanks" data-x='-3000' data-y='-1000' data-z='40000' data-rotate='-30'
+      data-scale='5' class="step">
+        <h2>Thank you for listening!</h2>
+      </div>
+      <div id="overview" data-x='-1000' data-y='0' data-z='40000' data-rotate='210'
+      data-scale='8' class="step"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script src="js/impress.js"></script>
+    <script>
+      impress().init();
+    </script>
+  </body>
+
+</html>

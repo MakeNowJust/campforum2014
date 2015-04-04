@@ -1,0 +1,213 @@
+@charset 'utf-8';
+@import url("http://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+body {
+  min-height: 740px;
+  font-family: 'Noto Sans Japanese', serif;
+  font-size: 16pt;
+  font-weight: 100;
+  letter-spacing: 0.5pt;
+  background: #c4ff85;
+  background: -webkit-radial-gradient(#dcff8b, #9aff2e);
+  background: -moz-radial-gradient(#dcff8b, #9aff2e);
+  background: -o-radial-gradient(#dcff8b, #9aff2e);
+  background: -ms-radial-gradient(#dcff8b, #9aff2e);
+  background: radial-gradient(#dcff8b, #9aff2e);
+}
+.fallback-message {
+  width: 780px;
+  padding: 10px 10px 0;
+  margin: 10px auto 0;
+  border: 2px solid #e4c652;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #eedc94;
+}
+.fallback-message p {
+  margin-bottom: 10px;
+}
+.impress-supported .fallback-message {
+  display: none;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-weight: italic;
+}
+.step {
+  position: relative;
+  width: 900px;
+  padding: 40px;
+  margin: 20px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 48px;
+  line-height: 1.5;
+}
+.step h1,
+.step h2 {
+  font-weight: bold;
+}
+.step h1 {
+  font-size: 1.6em;
+}
+.step h2 {
+  font-size: 1.2em;
+}
+.step .big {
+  font-size: 1.4em;
+}
+.step .bigbig {
+  font-size: 2em;
+}
+.step .small {
+  font-size: 0.5em;
+}
+.step ul {
+  list-style-type: disc;
+}
+.step ul li {
+  font-size: 0.5em;
+}
+.step pre {
+  font-size: 0.5em;
+}
+#title small {
+  font-size: 0.8em;
+}
+#like-4 .top {
+  vertical-align: top;
+  padding-right: 1em;
+}
+#like-4 img {
+  float: right;
+}
+#what-2 button {
+  font-size: 0.8em;
+  border: solid 1px #ccc;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
